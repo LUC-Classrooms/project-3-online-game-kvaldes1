@@ -48,7 +48,7 @@ switch (gameState) {
 
 function splash() {
   // this is what you would see when the game starts
-  background(200);
+  background(51,153, 255);
   textAlign(CENTER);
   textSize(16);
   text("Let's Play a Game!", width / 2, height / 2);
@@ -60,7 +60,7 @@ function splash() {
 
 function play() {
   // this is what you see when the game is running 
-  background(0, 200, 0);
+  background(	102, 0, 153);
   fill(0, 0, 200)
   textAlign(CENTER);
   textSize(16);
@@ -125,7 +125,7 @@ function play() {
 
 function gameOver() {
   // this is what you see when the game ends
-  background(0);
+  background(255, 153, 0);
   fill(255, 0, 0)
   textAlign(CENTER);
   textSize(16);
@@ -140,7 +140,7 @@ function mousePressed() {
     timer.start();
     dropTimer.start(); 
     score = 0;
-    
+
   } else if (gameState == "play") {
       //gameState = "gameOver";
     } else if (gameState == "gameOver") {
@@ -180,6 +180,6 @@ function mousePressed() {
 
   console.log("click!");
   
-
+ 
 
   }
