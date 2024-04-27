@@ -1,6 +1,6 @@
 /**
  * Project 3 versions 0-4 - 2D Web Game
- * Name:
+ * Name:Karina Valdes
  * 
  * Use this template to get started creating a simple 2D game for the web using P5.js. 
  */
