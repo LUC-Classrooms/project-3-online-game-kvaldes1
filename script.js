@@ -11,6 +11,7 @@ var timer;
 var testBox; 
 var dropTimer;
 var presents = new Array(0);// empty array
+var score = 0;
 
 function setup() {
 
@@ -19,7 +20,7 @@ player1 = new Player (width/2, height * 11/12);
 testBox= new Box (width/2,height/3);
 
 timer = new Timer(20000);
-dropTimer = new Timer (10000);
+dropTimer = new Timer (1000);
 
 
 }
