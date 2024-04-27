@@ -87,16 +87,21 @@ function play() {
 
     if(presents [i].y > height){
       presents.splice(i, 1);
+      score --;
+      
     }
 
     let d = dist(presents[i].x, presents [i].y, player1.x, player1.y);
     if(d< 50) {
       presents.splice(i, 1);
+      score ++; 
 
     }
   }
   textAlign (LEFT);
   text (timer.elapsedTime, 20,20)
+
+  text ("Score:" + score, 20, 40); 
 }
 
   if(keyIsPressed) {
@@ -125,6 +130,7 @@ function gameOver() {
   textAlign(CENTER);
   textSize(16);
   text("Game Over!", width / 2, height / 2);
+  text ("Your Final Score:" + score, width/2, height * 2/3);
 }
 
 function mousePressed() {
@@ -133,6 +139,8 @@ function mousePressed() {
     gameState = "play"; // go to the play () screen
     timer.start();
     dropTimer.start(); 
+    score = 0;
+    
   } else if (gameState == "play") {
       //gameState = "gameOver";
     } else if (gameState == "gameOver") {
